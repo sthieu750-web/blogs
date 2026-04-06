@@ -1,0 +1,99 @@
+/* ===== 机场推荐模块（高对比优化版）===== */
+
+.airport-list {
+  margin-top: 20px;
+}
+
+.airport-item {
+  margin-bottom: 14px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #ffffff; /* 白底 */
+  border-left: 5px solid; /* 左侧彩条（关键） */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+}
+
+.airport-item a {
+  text-decoration: none !important;
+  display: block;
+  color: #333; /* 统一深色文字 */
+}
+
+/* 推荐标签（更醒目） */
+.airport-item .tag {
+  background: #ff5722;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* 名称 */
+.airport-item .name {
+  font-weight: bold;
+  margin-right: 12px;
+  color: #111;
+}
+
+/* 描述 */
+.airport-item .desc {
+  color: #555;
+}
+
+/* ===== 颜色主题（改成“边框色”而不是整块底色）===== */
+
+.airport-item.green {
+  border-color: #22c55e;
+}
+
+.airport-item.blue {
+  border-color: #3b82f6;
+}
+
+.airport-item.purple {
+  border-color: #a855f7;
+}
+
+/* hover 动效（更明显一点） */
+.airport-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.airport-item.green { background: #f6fffa; }
+.airport-item.blue { background: #f6faff; }
+.airport-item.purple { background: #fbf7ff; }
+
+.airport-item {
+  font-size: 30px;
+}
+
+.airport-item .name {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.airport-item .desc {
+  font-size: 23px;
+  color: #444;
+}
+
+.airport-item .tag {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .airport-item {
+    font-size: 15px;
+  }
+
+  .airport-item .name {
+    font-size: 17px;
+  }
+
+  .airport-item .desc {
+    font-size: 14px;
+  }
+}

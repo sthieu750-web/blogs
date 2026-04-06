@@ -1,0 +1,4 @@
+/* 隐藏导航栏右侧的深色模式切换按钮 */
+#theme-switch {
+    display: none !important;
+}
